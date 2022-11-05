@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/edit/{{post.id}}?_method=PUT" method="POST">
+        <input type="text" value={{post.title}} name="title"></input>
+        <input type="text" value={{post.body}} name="body"></input>
+        <input type="text" value={{post.author}} name="author"></input>
+        <input type="password" name="pw" >
+        
+
+        <input type="submit" value="edit record">
+    </form>
+    
+</body>
+</html>
